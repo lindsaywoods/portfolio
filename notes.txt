@@ -1,0 +1,17 @@
+-firebase logo
+- react logo
+- fix email
+- set up github
+- 
+
+
+
+
+
+
+
+
+stick poke
+- add to twitter
+- error handling - you fucked up  
+- what to do - placeholder text?

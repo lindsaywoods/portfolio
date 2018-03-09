@@ -1,0 +1,254 @@
+@import "setup";
+@import "variables.scss";
+
+
+body {
+    background: $backgroundColour;
+}
+
+.wrapper {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+h1, h2, ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+}
+
+h1{
+    font-family: $h1Font;
+}
+
+p, h2, input, label {
+    font-family: $copyFont;
+}
+
+p {
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    display: flex;
+}
+
+header {
+    background-image: url("/styles/assets/vincent-guth-358800-unsplash.jpg");
+    background-size: cover;
+    padding: 200px;
+    display: flex;
+    justify-content: center;
+}
+
+.headerColourBorder {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 13px solid;
+    border-image:url("/styles/assets/daria-shevtsova-57355.jpg") 30 30;
+    padding: 50px;
+    min-width: 300px;
+    max-width: 500px;
+    position: relative;
+    h1 {
+        position: absolute;
+        font-size: 100px;
+    }
+}
+
+.aboutMeSection {
+    display: flex;
+    padding-top: 100px;
+    p {
+    padding: 20px;
+    }
+    h2 {
+        padding: 200px 0 0 20px;
+    }
+    
+}
+
+.aboutMeImage {
+    position: relative;
+    min-width: 50%;
+}
+
+.aboutImageBackLayer {
+    width: 300px;
+    position: relative;
+    margin: 10px;
+}
+
+.aboutColourBorder {
+    width: 300px;
+    border: 13px solid;
+    border-image:url("/styles/assets/daria-shevtsova-57355.jpg") 30 30;
+    margin: 10px;
+    padding: 200px 0;
+    position: absolute;
+    top: 6%;
+    left: 15%;
+}
+
+.aboutImageFrontLayer {
+    width: 300px;
+    height: 400px;
+    background-image: url("/styles/assets/scissors.jpg");
+    position: absolute;
+    top: 25%;
+    left: 32%;
+}
+
+.portSection {
+    margin-top: 200px;
+}
+
+.portItem {
+    // border: 3px solid mediumvioletred;
+    p {
+        padding: 20px;
+    }
+
+    h2 {
+        padding: 20px;
+    }
+}
+
+.portItem1, .portItem2, .portItem3 {
+    display: flex;
+}
+
+.portItem {
+    margin: 100px;
+}
+
+.portItemImageContainer {
+    position: relative;
+}
+
+.portImage1, .portImage2 {
+    width: 350px;
+    position: absolute;
+    top: 28%;
+    left: 18%;
+    border: 10px solid $lightGrey;
+}
+
+.portImage3 {
+    width: 220px;
+    position: absolute;
+    border: 10px solid $lightGrey;
+    top: 14%;
+    left: 37%;
+}
+
+.portItem1Image, .portItem2Image, .portItem3Image {
+    width: 300px;
+    height: 400px;
+    border: 13px solid;
+    border-image:url("/styles/assets/daria-shevtsova-57355.jpg") 30 30;
+}
+
+
+.portItem1Desc, .portItem2Desc, .portItem3Desc {
+    margin-left: 25%;
+}
+
+
+.iconList {
+    display: flex;
+    justify-content: space-around;
+    max-width: 80%;
+    margin: 0 auto;
+    svg {
+        max-width: 50px;
+        margin: 15px;
+    }
+}
+
+.skillsSection {
+    
+}
+
+.contactSection {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 150px;
+}
+
+.contactForm {
+    display: flex;
+    flex-direction: column;
+    max-width: 50%;
+    align-items: center;
+}
+
+.contactIcons {
+    display: flex;
+    justify-content: space-around;
+}
+
+.instaIcon, .twitterIcon {
+    margin: 10px;
+    width: 30px;
+}
+
+.instaIcon {
+    padding-top: 3px;
+}
+
+.twitterIcon {
+    padding-top: 5px;
+}
+
+.linkedIcon {
+    width: 50px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    // justify-content: center;
+    align-content: center;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.contactImage {
+    background: linear-gradient(
+    rgba(119,136,153,.3),
+    rgba(119,136,153,.3)), 
+    url("/styles/assets/contactImage.jpg");
+    width: 300px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 100px 0;
+    position: absolute;
+    top: 25%;
+    right: 15%;
+    filter: grayscale(100%);
+}
+
+.contactImageBorder {
+    border: $border;
+    border-image: $borderImage;
+    width: 300px;
+    padding: 170px 0;
+    position: relative;
+}
+
+// .typingHands {
+//     width: 300px;
+//     margin: 10px;
+    
+// }
+
+
+
+
