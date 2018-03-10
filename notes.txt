@@ -1,7 +1,7 @@
 -firebase logo
 - react logo
 - fix email
-- set up github
+- set up github 
 - 
 
 
@@ -12,6 +12,7 @@
 
 
 stick poke
+- screenshot for portfolio
 - add to twitter
 - error handling - you fucked up  
 - what to do - placeholder text?

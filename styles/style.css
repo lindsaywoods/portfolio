@@ -138,6 +138,9 @@ body {
   max-width: 1000px;
   margin: 0 auto; }
 
+a {
+  text-decoration: none; }
+
 h1, h2, ul {
   margin: 0;
   padding: 0;
@@ -145,15 +148,19 @@ h1, h2, ul {
   display: flex; }
 
 h1 {
-  font-family: "Assistant", sans-serif; }
+  font-family: "Reem Kufi", sans-serif; }
 
-p, h2, input, label {
+p, h2, input, label, li {
   font-family: "Neuton", serif; }
+
+h2 {
+  font-family: "Reem Kufi", sans-serif; }
 
 p {
   font-size: 16px;
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  color: #3f3f3f; }
 
 ul {
   display: flex; }
@@ -216,12 +223,24 @@ header {
 
 .portSection {
   margin-top: 200px; }
-
-.portItem p {
-  padding: 20px; }
+  .portSection li {
+    font-size: 20px;
+    color: #3f3f3f; }
 
 .portItem h2 {
-  padding: 20px; }
+  margin-top: 20%; }
+
+.portItem li {
+  line-height: 25px; }
+
+.portItem a {
+  text-transform: uppercase;
+  color: #3f3f3f;
+  font-size: 15px;
+  line-height: 20px; }
+  .portItem a:hover {
+    color: #0c0c0c;
+    text-decoration: underline; }
 
 .portItem1, .portItem2, .portItem3 {
   display: flex; }
@@ -229,21 +248,36 @@ header {
 .portItem {
   margin: 100px; }
 
+.portTitle {
+  flex-direction: column;
+  text-transform: lowercase; }
+
 .portItemImageContainer {
   position: relative; }
 
-.portImage1, .portImage2 {
+.portImage1 {
   width: 350px;
   position: absolute;
   top: 28%;
-  left: 18%;
-  border: 10px solid #bfbfbf; }
+  left: 18%; }
 
 .portImage3 {
+  width: 150px;
+  position: absolute;
+  top: 35%;
+  left: 55%; }
+
+.portImage31 {
+  width: 150px;
+  position: absolute;
+  top: 15%;
+  left: 25%;
+  z-index: -1; }
+
+.portImage2 {
   width: 220px;
   position: absolute;
-  border: 10px solid #bfbfbf;
-  top: 14%;
+  top: 12%;
   left: 37%; }
 
 .portItem1Image, .portItem2Image, .portItem3Image {
@@ -252,8 +286,15 @@ header {
   border: 13px solid;
   border-image: url("/styles/assets/daria-shevtsova-57355.jpg") 30 30; }
 
-.portItem1Desc, .portItem2Desc, .portItem3Desc {
+.portItemDesc {
   margin-left: 25%; }
+
+.portList {
+  display: flex;
+  flex-direction: column; }
+
+.viewLinksContainer {
+  margin-top: 20px; }
 
 .iconList {
   display: flex;
@@ -274,6 +315,8 @@ header {
   flex-direction: column;
   max-width: 50%;
   align-items: center; }
+  .contactForm p {
+    margin-bottom: 30px; }
 
 .contactIcons {
   display: flex;

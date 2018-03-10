@@ -11,6 +11,10 @@ body {
     margin: 0 auto;
 }
 
+a {
+    text-decoration: none;
+}
+
 h1, h2, ul {
     margin: 0;
     padding: 0;
@@ -22,14 +26,19 @@ h1{
     font-family: $h1Font;
 }
 
-p, h2, input, label {
+p, h2, input, label, li {
     font-family: $copyFont;
+}
+
+h2 {
+    font-family: $h1Font;
 }
 
 p {
     font-size: 16px;
     margin: 0;
     padding: 0;
+    color: $darkGrey;
 }
 
 ul {
@@ -105,16 +114,28 @@ header {
 
 .portSection {
     margin-top: 200px;
+    li {
+        font-size: 20px;
+        color: $darkGrey;
+    }
 }
 
 .portItem {
-    // border: 3px solid mediumvioletred;
-    p {
-        padding: 20px;
-    }
-
     h2 {
-        padding: 20px;
+        margin-top: 20%;
+    }
+    li {
+        line-height: 25px;
+    }
+    a {
+        text-transform: uppercase;
+        color: $darkGrey;
+        font-size: 15px;
+        line-height: 20px;
+        &:hover{
+            color: $black;
+            text-decoration: underline;
+        }
     }
 }
 
@@ -126,23 +147,41 @@ header {
     margin: 100px;
 }
 
+.portTitle {
+    flex-direction: column;
+    text-transform: lowercase;
+}
+
 .portItemImageContainer {
     position: relative;
 }
 
-.portImage1, .portImage2 {
+.portImage1 {
     width: 350px;
     position: absolute;
     top: 28%;
     left: 18%;
-    border: 10px solid $lightGrey;
 }
 
 .portImage3 {
+    width: 150px;
+    position: absolute;
+    top: 35%;
+    left: 55%;
+}
+
+.portImage31 {
+    width: 150px;
+    position: absolute;
+    top: 15%;
+    left: 25%;
+    z-index: -1;
+}
+
+.portImage2 {
     width: 220px;
     position: absolute;
-    border: 10px solid $lightGrey;
-    top: 14%;
+    top: 12%;
     left: 37%;
 }
 
@@ -154,10 +193,28 @@ header {
 }
 
 
-.portItem1Desc, .portItem2Desc, .portItem3Desc {
+.portItemDesc {
     margin-left: 25%;
 }
 
+// .portItem1Desc {
+//     display: flex;
+//     flex-direction: column;
+//     text-align: left;
+//     h2  {
+//         text-align: left;
+//         padding-left: 0;
+//     }
+// }
+
+.portList {
+    display: flex;
+    flex-direction: column;
+}
+
+.viewLinksContainer {
+    margin-top: 20px;
+}
 
 .iconList {
     display: flex;
@@ -185,6 +242,9 @@ header {
     flex-direction: column;
     max-width: 50%;
     align-items: center;
+    p {
+        margin-bottom: 30px;
+    }
 }
 
 .contactIcons {
