@@ -53,13 +53,17 @@ header {
     justify-content: center;
 }
 
+.sectionHeader {
+    font-size: 30px;
+}
+
 .headerColourBorder {
     display: flex;
     justify-content: center;
     align-items: center;
     border: 13px solid;
     border-image:url("/styles/assets/daria-shevtsova-57355.jpg") 30 30;
-    padding: 50px;
+    padding: 70px;
     min-width: 300px;
     max-width: 500px;
     position: relative;
@@ -67,6 +71,19 @@ header {
         position: absolute;
         font-size: 100px;
     }
+
+    h2 {
+        position: absolute;
+        margin-top: 10px;
+    }
+}
+
+.topHeader {
+    top: -36%;
+}
+
+.bottomHeader {
+    bottom: -36%;
 }
 
 .aboutMeSection {
@@ -120,6 +137,10 @@ header {
     }
 }
 
+.portHeader {
+    padding-left: 20px;
+}
+
 .portItem {
     h2 {
         margin-top: 20%;
@@ -143,13 +164,28 @@ header {
     display: flex;
 }
 
+
 .portItem {
     margin: 100px;
+    img{
+        filter: drop-shadow(0px 1px 3px $lightGrey);
+    }
+}
+
+.portItem3 {
+    img {
+        filter: drop-shadow(0px 1px 3px $darkGrey);
+    }
+}
+
+.portItem1 {
+    margin-top: 40px;
 }
 
 .portTitle {
     flex-direction: column;
     text-transform: lowercase;
+    margin-bottom: 25px;
 }
 
 .portItemImageContainer {
@@ -164,25 +200,25 @@ header {
 }
 
 .portImage3 {
-    width: 150px;
+    width: 170px;
     position: absolute;
-    top: 35%;
-    left: 55%;
+    top: 30%;
+    left: 53%;
 }
 
 .portImage31 {
-    width: 150px;
+    width: 170px;
     position: absolute;
-    top: 15%;
-    left: 25%;
+    top: 12%;
+    left: 23%;
     z-index: -1;
 }
 
 .portImage2 {
-    width: 220px;
+    width: 300px;
     position: absolute;
-    top: 12%;
-    left: 37%;
+    top: 18%;
+    left: 30%;
 }
 
 .portItem1Image, .portItem2Image, .portItem3Image {
@@ -196,16 +232,6 @@ header {
 .portItemDesc {
     margin-left: 25%;
 }
-
-// .portItem1Desc {
-//     display: flex;
-//     flex-direction: column;
-//     text-align: left;
-//     h2  {
-//         text-align: left;
-//         padding-left: 0;
-//     }
-// }
 
 .portList {
     display: flex;
@@ -225,10 +251,6 @@ header {
         max-width: 50px;
         margin: 15px;
     }
-}
-
-.skillsSection {
-    
 }
 
 .contactSection {

@@ -172,19 +172,31 @@ header {
   display: flex;
   justify-content: center; }
 
+.sectionHeader {
+  font-size: 30px; }
+
 .headerColourBorder {
   display: flex;
   justify-content: center;
   align-items: center;
   border: 13px solid;
   border-image: url("/styles/assets/daria-shevtsova-57355.jpg") 30 30;
-  padding: 50px;
+  padding: 70px;
   min-width: 300px;
   max-width: 500px;
   position: relative; }
   .headerColourBorder h1 {
     position: absolute;
     font-size: 100px; }
+  .headerColourBorder h2 {
+    position: absolute;
+    margin-top: 10px; }
+
+.topHeader {
+  top: -36%; }
+
+.bottomHeader {
+  bottom: -36%; }
 
 .aboutMeSection {
   display: flex;
@@ -227,6 +239,9 @@ header {
     font-size: 20px;
     color: #3f3f3f; }
 
+.portHeader {
+  padding-left: 20px; }
+
 .portItem h2 {
   margin-top: 20%; }
 
@@ -247,10 +262,19 @@ header {
 
 .portItem {
   margin: 100px; }
+  .portItem img {
+    filter: drop-shadow(0px 1px 3px #bfbfbf); }
+
+.portItem3 img {
+  filter: drop-shadow(0px 1px 3px #3f3f3f); }
+
+.portItem1 {
+  margin-top: 40px; }
 
 .portTitle {
   flex-direction: column;
-  text-transform: lowercase; }
+  text-transform: lowercase;
+  margin-bottom: 25px; }
 
 .portItemImageContainer {
   position: relative; }
@@ -262,23 +286,23 @@ header {
   left: 18%; }
 
 .portImage3 {
-  width: 150px;
+  width: 170px;
   position: absolute;
-  top: 35%;
-  left: 55%; }
+  top: 30%;
+  left: 53%; }
 
 .portImage31 {
-  width: 150px;
+  width: 170px;
   position: absolute;
-  top: 15%;
-  left: 25%;
+  top: 12%;
+  left: 23%;
   z-index: -1; }
 
 .portImage2 {
-  width: 220px;
+  width: 300px;
   position: absolute;
-  top: 12%;
-  left: 37%; }
+  top: 18%;
+  left: 30%; }
 
 .portItem1Image, .portItem2Image, .portItem3Image {
   width: 300px;

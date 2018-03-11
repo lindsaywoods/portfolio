@@ -1,8 +1,7 @@
 -firebase logo
 - react logo
 - fix email
-- set up github 
-- 
+- CHANGE FILTER TO STYLED PHOTO
 
 
 
