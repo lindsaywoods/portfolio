@@ -1,5 +1,6 @@
 -firebase logo
 - react logo
+- node?
 - fix email
 - CHANGE FILTER TO STYLED PHOTO
 
@@ -15,3 +16,4 @@ stick poke
 - add to twitter
 - error handling - you fucked up  
 - what to do - placeholder text?
+- responsiveness

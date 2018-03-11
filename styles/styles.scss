@@ -19,18 +19,17 @@ h1, h2, ul {
     margin: 0;
     padding: 0;
     list-style: none;
-    display: flex;
 }
 
 h1{
     font-family: $h1Font;
 }
 
-p, h2, input, label, li {
+p, input, label, li {
     font-family: $copyFont;
 }
 
-h2 {
+h2, h3 {
     font-family: $h1Font;
 }
 
@@ -51,39 +50,103 @@ header {
     padding: 200px;
     display: flex;
     justify-content: center;
+    position: relative;
+    h1 {
+        font-size: 100px;
+        position: relative;
+        z-index: 2;
+        margin: 5px;
+    }
+    
+    .headerColourBorder {
+        border: 13px solid;
+        border-image:url("/styles/assets/daria-shevtsova-57355.jpg") 30 30;
+        padding: 75px 70px;
+        max-width: 35%;
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin: auto;
+        top: 33%;
+        z-index: 1;
+    }
+    h2 {
+        position: relative;
+        bottom: 18%;
+        text-align: center;
+        padding: 2px;
+    }
 }
+
+@media (max-width:995px) {
+    header {
+        h1 {
+            font-size: 80px;
+        }
+    }
+}
+
+@media (max-width: 877px) {
+    header {
+        h1 {
+            font-size: 70px;
+        }
+    }
+}
+
+@media (max-width: 817px) {
+    header {
+        h1 {
+            font-size: 60px;
+        }
+    }
+}
+
+@media (max-width: 759px) {
+    header {
+        h1{
+            font-size: 50px;
+        }
+    }
+}
+
+@media (max-width: 701px) {
+    header {
+        padding: 200px 100px;
+    }
+}
+
+@media (max-width: 500px) {
+    header {
+        padding: 100px 70px;
+    }
+}
+
+@media (max-width: 441px) {
+    header {
+        h1 {
+            font-size: 40px;
+        }
+    }
+}
+
+@media (max-width: 383px) {
+    header {
+        h1 {
+            font-size: 30px;
+        }
+    }
+}
+
+@media (max-width: 325px) {
+    header {
+        padding: 100px 50px;
+    }
+}
+
 
 .sectionHeader {
     font-size: 30px;
-}
-
-.headerColourBorder {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 13px solid;
-    border-image:url("/styles/assets/daria-shevtsova-57355.jpg") 30 30;
-    padding: 70px;
-    min-width: 300px;
-    max-width: 500px;
-    position: relative;
-    h1 {
-        position: absolute;
-        font-size: 100px;
-    }
-
-    h2 {
-        position: absolute;
-        margin-top: 10px;
-    }
-}
-
-.topHeader {
-    top: -36%;
-}
-
-.bottomHeader {
-    bottom: -36%;
 }
 
 .aboutMeSection {
@@ -141,10 +204,13 @@ header {
     padding-left: 20px;
 }
 
-.portItem {
+.portItem1, .portItem2, .portItem3 {
     h2 {
         margin-top: 20%;
     }
+}
+
+.portItem {
     li {
         line-height: 25px;
     }
@@ -158,18 +224,14 @@ header {
             text-decoration: underline;
         }
     }
-}
-
-.portItem1, .portItem2, .portItem3 {
-    display: flex;
-}
-
-
-.portItem {
-    margin: 100px;
     img{
         filter: drop-shadow(0px 1px 3px $lightGrey);
     }
+    margin: 100px;
+}
+
+.portItem1, .portItem2, .portItem3, .portItem4 {
+    display: flex;
 }
 
 .portItem3 {
@@ -187,6 +249,31 @@ header {
     text-transform: lowercase;
     margin-bottom: 25px;
 }
+
+.wipTitle {
+    margin-bottom: 5px;
+    margin-top: 0px;
+    &:after {
+        display: inline-block;
+        content: "\2704";
+        transform: rotate(90deg);
+        
+    }
+    &:before {
+        display: inline-block;
+        content: "\2704";
+        transform: rotate(90deg);
+    }
+}
+
+.wipTitleh2{
+    display: inline-block;
+    padding: 5px 11px 2px;
+    border: 2px dashed $black;   
+    margin-bottom: 15px;
+    margin-top: 75px;
+}
+
 
 .portItemImageContainer {
     position: relative;
@@ -209,7 +296,7 @@ header {
 .portImage31 {
     width: 170px;
     position: absolute;
-    top: 12%;
+    top: 10%;
     left: 23%;
     z-index: -1;
 }
@@ -220,6 +307,32 @@ header {
     top: 18%;
     left: 30%;
 }
+
+.portImage4 {
+    position: absolute;
+    width: 250px;
+    top: 17%;
+    left: 26%;
+    padding: 8px;
+    border: 3px $black dashed;
+}
+
+.scissorsIcon {
+    max-width: 100px;
+    position: absolute;
+    z-index: 5;
+    top: 10%;
+}
+
+.measuringTape {
+    max-width: 95px;
+    position: absolute;
+    bottom: -2.5%;
+    right: -17%;
+    // right: 10%;
+}
+
+
 
 .portItem1Image, .portItem2Image, .portItem3Image {
     width: 300px;
@@ -244,12 +357,20 @@ header {
 
 .iconList {
     display: flex;
-    justify-content: space-around;
-    max-width: 80%;
-    margin: 0 auto;
+    justify-content: space-between;
+    width: 100%;
     svg {
         max-width: 50px;
         margin: 15px;
+    }
+    li {
+        margin: 0 auto;
+        text-align: center;
+    }
+    p {
+        font-family: $h1Font;
+        text-transform: uppercase;
+        font-size: 12px;
     }
 }
 
@@ -294,9 +415,24 @@ header {
 form {
     display: flex;
     flex-direction: column;
-    // justify-content: center;
     align-content: center;
 }
+
+.form {
+    border: none;
+    background-color: lighten($backgroundColour, 30);
+    border-bottom: 1px solid $darkGrey ;
+}
+
+textarea {
+    margin: 10px 0 30px;
+}
+
+.sendButton {
+    // max-width: 200px;
+    // margin: 0 auto;
+}
+
 
 .bold {
     font-weight: bold;
