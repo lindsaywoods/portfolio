@@ -155,6 +155,9 @@ p, input, label, li {
 h2, h3 {
   font-family: "Reem Kufi", sans-serif; }
 
+footer p {
+  font-family: "Reem Kufi", sans-serif; }
+
 p {
   font-size: 16px;
   margin: 0;
@@ -396,7 +399,7 @@ header {
   justify-content: space-between;
   width: 100%; }
   .iconList svg {
-    max-width: 50px;
+    max-width: 45px;
     margin: 15px; }
   .iconList li {
     margin: 0 auto;
@@ -404,7 +407,8 @@ header {
   .iconList p {
     font-family: "Reem Kufi", sans-serif;
     text-transform: uppercase;
-    font-size: 12px; }
+    font-size: 12px;
+    letter-spacing: 2px; }
 
 .contactSection {
   display: flex;
@@ -469,3 +473,19 @@ textarea {
   width: 300px;
   padding: 170px 0;
   position: relative; }
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 100px;
+  background-image: linear-gradient(to right, rgba(191, 191, 191, 0.9), rgba(191, 191, 191, 0.9)), url("/styles/assets/vincent-guth-358800-unsplash.jpg");
+  background-size: cover;
+  background-position: left;
+  background-repeat: no-repeat;
+  padding: 50px 50px 20px; }
+  footer p {
+    letter-spacing: 2px; }
+
+.scrollButton {
+  text-align: center;
+  letter-spacing: 1px; }
