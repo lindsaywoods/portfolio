@@ -2,19 +2,9 @@
 
 $(document).ready(function () {
 
-  //Check to see where window is
-  // if relevant, display button
-  $(window).scroll(function () {
-    if ($(this).scrollTop() > 100) {
-      $('.scrollToTop').fadeIn();
-    } else {
-      $('.scrollToTop').fadeOut();
-    }
-  });
-
   //Click event to scroll to top
   $('.scrollToTop').click(function () {
-    $('html, body').animate({ scrollTop: 0 }, 800);
+    $('html, body').animate({ scrollTop: 0 }, 200);
     return false;
   });
 });

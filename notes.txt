@@ -1,9 +1,14 @@
 -firebase logo
 - react logo
 - node?
-- fix email
+- babel?
 - CHANGE FILTER TO STYLED PHOTO
-
+- different floral border
+- fix footer image
+- scroll to top button
+- responsiveness
+  -nb box in header
+- alt text
 
 
 other
