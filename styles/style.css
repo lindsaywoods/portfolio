@@ -267,7 +267,7 @@ header {
 .aboutImageFrontLayer {
   width: 300px;
   height: 400px;
-  background: url("/styles/assets/aboutMeImage.jpg");
+  background: url("/styles/assets/scissors.jpg");
   filter: grayscale(20%);
   background-repeat: no-repeat;
   background-size: contain;
@@ -456,9 +456,12 @@ header {
     font-size: 20px;
     margin-bottom: 5px; }
   .portItemDesc {
-    margin-left: 20%; }
+    margin-left: 20%;
+    justify-content: center; }
     .portItemDesc li {
       font-size: 16px; }
+  .portItem2, .portItem1, .portItem3, .portItem4 {
+    justify-content: space-between; }
   .portSection {
     text-align: right; }
   .viewLinksContainer p {
@@ -469,6 +472,48 @@ header {
 @media (max-width: 767px) {
   .grimSpan {
     font-size: 14px; } }
+
+@media (max-width: 627px) {
+  .portItem1, .portItem2, .portItem3, .portItem4 {
+    flex-direction: column;
+    border: 13px solid;
+    border-image: url("/styles/assets/daria-shevtsova-57355.jpg") 30 30;
+    align-content: center;
+    margin: 50px; }
+  .portItemDesc {
+    padding-right: 20px;
+    padding-bottom: 20px; }
+  .portItem1Image, .portItem2Image, .portItem3Image, .portItem4Image {
+    border: none; }
+  .portItem1Image img, .portItem4Image {
+    width: 300px;
+    width: 90%;
+    left: 5%;
+    top: 5%; }
+  .portItem2Image img {
+    width: 90%;
+    left: 5%;
+    top: 5%; }
+  .portItem2Image.portTitle {
+    border: 3px solid mediumvioletred; }
+  .portItem3Image img {
+    width: 50%;
+    left: 5%;
+    top: 5%; }
+  .portImage31 {
+    display: none; }
+  .portTitle, .portItem1 h2, .portITem2 h2, .portItem3 h2 {
+    margin-top: 10px; }
+  .portItem1 {
+    display: flex; }
+  .portItem2 {
+    height: 650px; }
+  .portItemImageContainer {
+    display: flex; } }
+
+@media (max-width: 450px) {
+  .portItemImageContainer {
+    height: 250px; } }
 
 .portItem1Image {
   border-image: url("/styles/assets/daria-shevtsova-57355.jpg") 30 30; }
@@ -481,7 +526,8 @@ header {
 
 .portItemDesc {
   margin-left: 25%;
-  margin-right: 0; }
+  margin-right: 0;
+  justify-content: center; }
 
 .portList {
   display: flex;
@@ -490,21 +536,46 @@ header {
 .viewLinksContainer {
   margin-top: 20px; }
 
+.topIconList, .bottomIconList {
+  display: flex; }
+
+.firebaseIcon svg {
+  width: 45px;
+  height: 45px; }
+
 .iconList {
   display: flex;
-  justify-content: space-between;
-  width: 100%; }
+  justify-content: center;
+  flex-direction: column;
+  width: 90%;
+  margin: 0 40px 0; }
   .iconList svg {
     max-width: 45px;
     margin: 15px; }
   .iconList li {
     margin: 0 auto;
-    text-align: center; }
+    text-align: center;
+    display: block;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 5px; }
   .iconList p {
     font-family: "Reem Kufi", sans-serif;
     text-transform: uppercase;
     font-size: 12px;
-    letter-spacing: 2px; }
+    letter-spacing: 2px;
+    padding-top: 3px; }
+
+.topIconList, .bottomIconList {
+  margin: 0 auto; }
+
+.bottomIconList {
+  margin: 0 auto; }
+
+.iconList li {
+  border: 1px solid #0c0c0c; }
 
 .contactSection {
   display: flex;
@@ -512,6 +583,7 @@ header {
   margin-top: 150px; }
 
 .contactForm {
+  text-align: left;
   display: flex;
   flex-direction: column;
   max-width: 50%;
@@ -571,8 +643,32 @@ textarea {
   border: 13px solid;
   border-image: url("/styles/assets/daria-shevtsova-57355.jpg") 30 30;
   width: 300px;
-  padding: 170px 0;
   position: relative; }
+
+@media (max-width: 900px) {
+  .contactImage {
+    width: 250px; }
+  .contactImageBorder {
+    width: 250px;
+    padding: 90px; } }
+
+@media (max-width: 850px) {
+  .contactImage {
+    width: 210px; }
+  .contactImageBorder {
+    height: 400px;
+    width: 150px;
+    top: 12%; } }
+
+@media (max-width: 750px) {
+  .contactImage {
+    display: none; }
+  .contactImageBorder {
+    display: none; } }
+
+@media (max-width: 430px) {
+  form {
+    width: 90%; } }
 
 footer {
   display: flex;
