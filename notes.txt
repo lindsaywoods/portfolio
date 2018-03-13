@@ -1,15 +1,7 @@
--firebase logo
-- react logo
-- node?
-- babel?
-- CHANGE FILTER TO STYLED PHOTO
-- different floral border
-- fix footer image
-- scroll to top button
 - responsiveness
-  -nb box in header
 - alt text
-
+- description on wip
+- favicon
 
 other
 - update linkedins

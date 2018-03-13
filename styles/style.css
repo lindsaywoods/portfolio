@@ -168,7 +168,7 @@ ul {
   display: flex; }
 
 header {
-  background-image: url("/styles/assets/vincent-guth-358800-unsplash.jpg");
+  background-image: url("/styles/assets/vincentGuthFlipped.jpg");
   background-size: cover;
   padding: 200px;
   display: flex;
@@ -183,7 +183,7 @@ header {
     border: 13px solid;
     border-image: url("/styles/assets/daria-shevtsova-57355.jpg") 15 15;
     padding: 75px 70px;
-    max-width: 35%;
+    width: 35%;
     position: absolute;
     left: 0;
     right: 0;
@@ -202,15 +202,27 @@ header {
 
 @media (max-width: 877px) {
   header h1 {
-    font-size: 70px; } }
+    font-size: 70px; }
+  #headerColour {
+    padding: 60px 130px;
+    max-width: 40%; } }
 
 @media (max-width: 817px) {
   header h1 {
-    font-size: 60px; } }
+    font-size: 60px; }
+  #headerColour {
+    padding: 60px 130px; } }
 
 @media (max-width: 759px) {
   header h1 {
-    font-size: 50px; } }
+    font-size: 50px;
+    padding-bottom: 10px; }
+  .bottomHeader {
+    margin-bottom: 10px; }
+  #headerColour {
+    padding: 60px 70px;
+    border: 8px solid;
+    border-image: url("/styles/assets/daria-shevtsova-573555.jpg") 15 15; } }
 
 @media (max-width: 701px) {
   header {
@@ -218,7 +230,11 @@ header {
 
 @media (max-width: 500px) {
   header {
-    padding: 100px 70px; } }
+    padding: 100px 70px; }
+    header h1 {
+      padding-top: 30px; }
+  #headerColour {
+    padding: 70px 90px 30px 90px; } }
 
 @media (max-width: 441px) {
   header h1 {
@@ -237,7 +253,7 @@ header {
 
 .aboutMeSection {
   display: flex;
-  padding-top: 100px; }
+  padding-top: 70px; }
   .aboutMeSection p {
     padding: 5px 10px 5px 5px;
     font-size: 18px;
@@ -257,7 +273,7 @@ header {
 .aboutColourBorder {
   width: 300px;
   border: 13px solid;
-  border-image: url("/styles/assets/daria-shevtsova-57355.jpg") 30;
+  border-image: url("/styles/assets/daria-shevtsova-573554.jpg") 15 15;
   margin: 10px;
   padding: 200px 0;
   position: absolute;
@@ -314,22 +330,22 @@ header {
 @media (max-width: 570px) {
   .aboutMeSection {
     flex-direction: column;
-    align-items: center; }
+    align-items: center;
+    padding-top: 25px; }
+  .aboutMeCopy .bottomPara {
+    margin-bottom: 12%; }
   .aboutImageFrontLayer {
     width: 150px;
     top: 45%;
-    left: 35%; }
+    left: 35%;
+    height: 220px; }
   .aboutColourBorder {
     padding: 120px 0; }
   .portSection {
-    margin-top: 200px; }
+    margin-top: 180px; }
     .portSection li {
       font-size: 20px;
       color: #3f3f3f; } }
-
-.portHeader {
-  padding-left: 20px;
-  margin-top: 20%; }
 
 .portSection p {
   text-align: left; }
@@ -494,14 +510,11 @@ header {
     width: 90%;
     left: 5%;
     top: 5%; }
-  .portItem2Image.portTitle {
-    border: 3px solid mediumvioletred; }
   .portItem3Image img {
     width: 50%;
-    left: 5%;
-    top: 5%; }
-  .portImage31 {
-    display: none; }
+    left: 10%;
+    top: 5%;
+    margin: 0 auto; }
   .portTitle, .portItem1 h2, .portITem2 h2, .portItem3 h2 {
     margin-top: 10px; }
   .portItem1 {
@@ -509,20 +522,58 @@ header {
   .portItem2 {
     height: 650px; }
   .portItemImageContainer {
-    display: flex; } }
+    display: flex; }
+  .portItem3 {
+    height: 600px; }
+  .portItem3Image img {
+    width: 50%;
+    left: 50%;
+    transform: translateX(-50%); }
+  .scissorsIcon {
+    left: 15%; } }
 
-@media (max-width: 450px) {
+@media (max-width: 550px) {
+  .portItem3 {
+    height: 500px; } }
+
+@media (max-width: 511px) {
+  .portItem2 {
+    height: 550px; } }
+
+@media (max-width: 488px) {
+  .portItem4 {
+    height: 550px; } }
+
+@media (max-width: 476px) {
   .portItemImageContainer {
-    height: 250px; } }
+    height: 200px; } }
+
+@media (max-width: 439px) {
+  .portItem2 {
+    height: 500px; } }
+
+@media (max-width: 400px) {
+  .portItem3 {
+    height: 485px; } }
+
+@media (max-width: 375px) {
+  .portItem2 {
+    height: 450px; }
+  .portItem4 {
+    height: 560px; } }
+
+@media (max-width: 350px) {
+  .portItem3 {
+    height: 450px; } }
 
 .portItem1Image {
-  border-image: url("/styles/assets/daria-shevtsova-57355.jpg") 30 30; }
+  border-image: url("/styles/assets/daria-shevtsova-573552.jpg") 30 30; }
 
 .portItem2Image {
   border-image: url("/styles/assets/daria-shevtsova-57355.jpg") 15 15; }
 
 .portItem3Image {
-  border-image: url("/styles/assets/daria-shevtsova-57355.jpg") 50; }
+  border-image: url("/styles/assets/daria-shevtsova-573554.jpg") 20; }
 
 .portItemDesc {
   margin-left: 25%;
@@ -532,6 +583,10 @@ header {
 .portList {
   display: flex;
   flex-direction: column; }
+
+.portHeader {
+  margin-top: 15%;
+  text-align: left; }
 
 .viewLinksContainer {
   margin-top: 20px; }
@@ -547,8 +602,10 @@ header {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  width: 90%;
+  max-width: 90%;
   margin: 0 40px 0; }
+  .iconList ul {
+    margin-top: 80px; }
   .iconList svg {
     max-width: 45px;
     margin: 15px; }
@@ -564,7 +621,7 @@ header {
   .iconList p {
     font-family: "Reem Kufi", sans-serif;
     text-transform: uppercase;
-    font-size: 12px;
+    font-size: 10px;
     letter-spacing: 2px;
     padding-top: 3px; }
 
@@ -575,12 +632,30 @@ header {
   margin: 0 auto; }
 
 .iconList li {
-  border: 1px solid #0c0c0c; }
+  border: 1px solid #0c0c0c;
+  width: 86px;
+  height: 97px; }
+
+@media (max-width: 685px) {
+  .iconList li {
+    width: 80px;
+    height: 91px; }
+  ul.iconList {
+    margin: 80px auto; } }
+
+@media (max-width: 600px) {
+  .iconList li {
+    width: 70px;
+    height: 81px;
+    font-size: 14px; }
+  .jsIcon p {
+    font-size: 10px;
+    letter-spacing: 1px; } }
 
 .contactSection {
   display: flex;
   justify-content: space-around;
-  margin-top: 150px; }
+  margin-top: 80px; }
 
 .contactForm {
   text-align: left;
@@ -674,7 +749,7 @@ footer {
   display: flex;
   justify-content: space-between;
   margin-top: 100px;
-  background: linear-gradient(to top, rgba(255, 255, 255, 0.2), #ebebeb), url("/styles/assets/vincent-guth-358800-unsplashFooter.jpg");
+  background: linear-gradient(to top, rgba(235, 235, 235, 0.1), #ebebeb), url("/styles/assets/vincent-guth-358800-unsplashFooter.jpg");
   background-size: cover;
   background-position: left;
   background-repeat: no-repeat;
@@ -685,5 +760,15 @@ footer {
     letter-spacing: 2px; }
 
 .scrollButton {
-  text-align: center;
-  letter-spacing: 1px; }
+  border: 3px solid mediumvioletred;
+  padding: 5px 15px;
+  position: relative;
+  left: calc(50% - 75px);
+  right: calc(50% - 75px);
+  top: 210px;
+  font-family: "Reem Kufi", sans-serif;
+  font-size: 24px;
+  color: #0c0c0c;
+  border: 8px solid;
+  border-image: url("/styles/assets/daria-shevtsova-57355.jpg") 50;
+  background: #d9d9d9; }
