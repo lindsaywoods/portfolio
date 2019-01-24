@@ -132,7 +132,7 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   box-sizing: border-box; }
 
 body {
-  background: linear-gradient(0deg, #ebebeb 0%, #ececec 43%, #dbe8ff 100%); }
+  background: #ebebeb; }
 
 .wrapper {
   max-width: 1000px;
@@ -287,6 +287,7 @@ header {
   letter-spacing: 2px; }
 
 .portHeader {
+  margin-top: 15%;
   text-align: left;
   padding-left: 20px;
   margin-bottom: 10px; }
@@ -391,7 +392,10 @@ header {
 
 .portSection {
   display: flex;
-  flex-wrap: wrap; }
+  flex-wrap: wrap;
+  justify-content: space-around;
+  max-width: 900px;
+  margin: 0 auto; }
   .portSection p {
     text-align: left; }
 
@@ -429,7 +433,9 @@ header {
 
 .portItem1 {
   display: flex;
-  margin-top: 40px; }
+  margin-top: 40px;
+  min-width: 40%;
+  justify-content: center; }
 
 .portTitle {
   flex-direction: column;
@@ -483,12 +489,10 @@ header {
     margin-top: 5%; } }
 
 @media (max-width: 850px) {
-  .portItem1Image {
-    width: 200px;
-    height: 400px; }
   .portImage1 {
-    width: 250px;
-    top: 43%; }
+    width: 90%;
+    left: 5%;
+    top: 4%; }
   .scissorsIcon {
     width: 70px; }
   .portTitle {
@@ -496,15 +500,11 @@ header {
     margin-bottom: 5px; }
   .portItemDesc {
     justify-content: center;
-    text-align: right; }
+    left: 4%; }
     .portItemDesc li {
       font-size: 16px; }
   .portItem1 {
     justify-content: space-between; }
-  .portSection p {
-    text-align: right; }
-  .viewLinksContainer p {
-    text-align: right; }
   .wipTitleh2 {
     margin-top: 20px; } }
 
@@ -518,11 +518,9 @@ header {
     border: 13px solid;
     border-image: url("/styles/assets/daria-shevtsova-57355.jpg") 30 30;
     align-content: center;
-    margin: 50px;
-    height: 700px; }
+    margin: 50px; }
   .portItemDesc {
-    padding-right: 20px;
-    padding-bottom: 20px; }
+    padding-right: 20px; }
   .portItem1Image {
     border: none; }
   .portItem1Image img {
@@ -543,7 +541,7 @@ header {
   .portItemImageContainer {
     height: 200px; }
   .portItem1 {
-    height: 580px; } }
+    height: 395px; } }
 
 @media (max-width: 400px) {
   .portItem {
@@ -556,7 +554,6 @@ header {
 .portItemDesc {
   justify-content: center;
   position: absolute;
-  left: 7%;
   bottom: 3%; }
 
 .portList {
@@ -578,7 +575,7 @@ header {
   justify-content: center;
   flex-direction: column;
   max-width: 90%;
-  margin: 0 40px 0; }
+  margin: 10% 40px 0; }
   .iconList ul {
     margin-top: 80px; }
   .iconList svg {
@@ -628,15 +625,12 @@ header {
     display: none; } }
 
 .contactSection {
-  display: flex;
-  justify-content: space-around;
   margin-top: 100px; }
 
 .contactForm {
   text-align: left;
   display: flex;
   flex-direction: column;
-  max-width: 50%;
   align-items: center; }
   .contactForm p {
     margin-bottom: 30px; }
@@ -679,7 +673,8 @@ form {
   flex-direction: column;
   align-content: center;
   margin-top: 30px;
-  font-size: 20px; }
+  font-size: 20px;
+  width: 80%; }
 
 .form {
   border: none;
@@ -721,7 +716,7 @@ label {
   .formName, .formEmail {
     width: 70%; }
   form {
-    max-width: 170%; } }
+    width: 100%; } }
 
 @media (max-width: 500px) {
   .formName, .formEmail {
