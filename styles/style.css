@@ -554,7 +554,8 @@ header {
 .portItemDesc {
   justify-content: center;
   position: absolute;
-  bottom: 3%; }
+  bottom: 3%;
+  left: 12%; }
 
 .portList {
   display: flex;
