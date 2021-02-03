@@ -36,4 +36,6 @@ gulp.task("default", ["styles", "scripts", "bs"], () => {
     gulp.watch("*.hmtl", reload);
 });
 
-gulp.task("build", ["styles", "scripts" ]);
+gulp.task("build", ["styles", "scripts" ], () => {
+    gulp.dest("/dist");
+});
