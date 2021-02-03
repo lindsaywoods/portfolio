@@ -35,3 +35,9 @@ gulp.task("default", ["styles", "scripts", "bs"], () => {
     gulp.watch("./js/script.js", ["scripts"]);
     gulp.watch("*.hmtl", reload);
 });
+
+gulp.task("build", ["styles", "scripts", "bs"], () => {
+    gulp.watch("./styles/**/*.scss", ["styles"]);
+    gulp.watch("./js/script.js", ["scripts"]);
+    gulp.watch("*.hmtl", reload);
+});
