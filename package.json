@@ -18,6 +18,8 @@
     "node-sass": "^4.13.1"
   },
   "dependencies": {
-    "browser-sync": "^2.23.6"
+    "browser-sync": "^2.23.6",
+    "node": "^15.7.0",
+    "v10": "^1.0.1"
   }
 }
