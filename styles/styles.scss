@@ -2,847 +2,870 @@
 @import "variables.scss";
 
 
-body {
-	background: $backgroundColour;
-}
+// body {
+// 	background: $backgroundColour;
+// }
 
-.wrapper {
-	max-width: 1000px;
-	margin: 0 auto;
-}
+// .wrapper {
+// 	max-width: 1000px;
+// 	margin: 0 auto;
+// }
 
-a {
-	text-decoration: none;
-}
+// a {
+// 	text-decoration: none;
+// }
 
-h1, h2, ul {
+// h1, h2, ul {
+// 	margin: 0;
+// 	padding: 0;
+// 	list-style: none;
+// }
+
+// h1{
+// 	font-family: $h1Font;
+// }
+
+// p, input, label, li, textarea {
+// 	font-family: $copyFont;
+// }
+
+// h2, h3 {
+// 	font-family: $h1Font;
+// }
+
+// footer p {
+// 	font-family: $h1Font;
+// }
+
+// p {
+// 	font-size: 16px;
+// 	margin: 0;
+// 	padding: 0;
+// 	color: $darkGrey;
+// }
+
+// ul {
+// 	display: flex;
+// }
+
+// header {
+// 	background-image: url("/styles/assets/vincentGuthFlipped.jpg");
+// 	background-size: cover;
+// 	padding: 200px;
+// 	display: flex;
+// 	justify-content: center;
+// 	position: relative;
+// 	border-bottom: 10px solid;
+// 	border-image:url("/styles/assets/daria-shevtsova-573556.jpg")10 10 round;
+    
+// 	h1 {
+// 		font-size: 115px;
+// 		position: relative;
+// 		z-index: 2;
+// 		margin: 5px;
+// 		padding-top: 35px;
+// 		padding-bottom: 10px;
+// 	}
+
+// 	.headerColourBorder {
+// 		border: 13px solid;
+// 		border-image:url("/styles/assets/daria-shevtsova-57355.jpg") 15 15;
+// 		padding: 100px 70px;
+// 		width: 35%;
+// 		position: absolute;
+// 		left: 0;
+// 		right: 0;
+// 		margin: auto;
+// 		top: 33%;
+// 		z-index: 1;
+//     }
+// 	h2 {
+// 		position: relative;
+// 		bottom: 18%;
+// 		text-align: center;
+// 		padding: 2px;
+// 		font-size: 30px;
+// 	}
+// }
+
+// .bottomHeader {
+// 	margin-top: 15px;
+// 	margin-bottom: 15px;
+// }
+
+// @media (max-width: 1080px) {
+// 	header {
+// 		padding: 200px 100px;
+// 	}
+// }
+
+// @media (max-width:995px) {
+// 	header {
+// 		h1 {
+// 			font-size: 80px;
+// 		}
+// 	}
+// }
+
+// @media (max-width: 877px) {
+// 	header {
+// 		h1 {
+// 			font-size: 70px;
+// 			padding-top: 20px;
+// 		}
+// 	}
+// 	#headerColour {
+// 		padding: 70px 130px;
+// 		max-width: 40%;
+// 	}
+// }
+
+// @media (max-width: 817px) {
+// 	header {
+// 		h1 {
+// 				font-size: 60px;
+// 		}
+// 	}
+// 	#headerColour {
+// 		padding: 65px 130px;
+// 	}
+// }
+
+// @media (max-width: 759px) {
+// 	header {
+// 		h1{
+// 				font-size: 50px;
+// 				padding-bottom: 10px;
+// 		}
+// 		h2 {
+// 				font-size: 24px;
+// 		}
+// 	}
+// 	.bottomHeader {
+// 		margin-bottom: 10px;
+// 	}
+// 	#headerColour {
+// 		padding: 70px 70px;
+// 		border: 8px solid;
+// 		border-image:url("/styles/assets/daria-shevtsova-573555.jpg") 15 15;
+// 		}
+// }
+
+// @media (max-width: 701px) {
+// 	header {
+// 		padding: 200px 100px;
+// 	}
+// }
+
+// @media (max-width: 670px) {
+// 	#headerColour {
+// 		padding: 60px 70px;
+// }
+// 	header {
+// 		h1 {
+// 			bottom: 10%;
+// 		}
+// 		h2 {
+// 			bottom: 27%;
+// 		}
+// 	}
+// }
+
+// @media (max-width: 501px) {
+// 	header {
+// 		padding: 100px 70px;
+// 		h1 {
+// 			padding-top: 30px;
+// 			bottom: 1%;
+// 		}
+// 		h2 {
+// 			bottom: 20%;
+// 		}
+// 	}
+// 	#headerColour {
+// 		padding: 80px 90px 30px 90px;
+// 	}
+// }
+
+// @media (max-width: 451px) {
+// 	header {
+// 		h1 {
+// 			font-size: 40px;
+// 		}
+// 	}
+// }
+
+// @media (max-width: 393px) {
+// 	header {
+// 		h1 {
+// 			font-size: 30px;
+// 		}
+// 		h2 {
+// 			font-size: 16px;
+// 			z-index: 2;
+// 		}
+// 	}
+// 	#headerColour {
+// 		padding: 30px 50px;
+// 		top: 40%;
+// 	}
+// }
+
+// @media (max-width: 335px) {
+// 	header {
+// 		padding: 100px 50px;
+// 	}
+// }
+
+// .sectionHeader {
+// 	font-size: 40px;
+// 	display: inline-block;
+// 	letter-spacing: 2px;
+// }
+
+// .portHeader {
+// 	margin-top: 15%;
+// 	text-align: left;
+// 	padding-left: 20px;
+// 	margin-bottom: 10px;
+// }
+
+// .aboutMeSection {
+// 	display: flex;	
+// 	padding-top: 15px;
+// 	p {
+// 		padding: 5px 10px 5px 5px;
+// 		font-size: 18px;
+// 		margin: 10px 5px 10px 15px;
+// 	}
+// 	h2 {
+// 		padding: 5% 0 30px 20px;
+// 	}
+// }
+
+// .aboutMeImage {
+// 	position: relative;
+// 	min-width: 50%;
+// }
+
+// .aboutImageBackLayer {
+// 	width: 300px;
+// 	position: relative;
+// 	margin: 10px;
+// }
+
+// .aboutColourBorder {
+// 	width: 300px;
+// 	border: 13px solid;
+// 	border-image:url("/styles/assets/daria-shevtsova-573554.jpg") 15 15;
+// 	margin: 10px;
+// 	padding: 200px 0;
+// 	position: absolute;
+// 	top: 6%;
+// 	left: 15%;
+// }
+
+// .aboutImageFrontLayer {
+// 	width: 300px;
+// 	filter: drop-shadow(0px 1px 3px $darkGrey);
+// 	background-repeat: no-repeat;
+// 	background-size: contain;
+// 	position: absolute;
+// 	top: 28%;
+// 	left: 32%;
+// 	img {
+// 		max-width: 100%;
+
+// 	}
+// }
+
+// @media (max-width: 950px) {
+// 	.aboutImageBackLayer, .aboutColourBorder, .aboutImageFrontLayer {
+// 		width: 200px;
+// 		margin-left: 20%;
+// 	}
+// 	.aboutColourBorder {
+// 		padding: 130px 0;
+// 		top: 8%;
+// 		left: 8%;
+// 	}
+// 	.aboutImageFrontLayer {
+// 		top: 22%;
+// 		left: 20%;
+// 	}
+// 	.aboutMeSection {
+// 		h2 {
+// 			padding: 10% 0 0 0;
+// 			margin-right: 30%;
+// 		}
+// 	}
+// 	.sectionHeader {
+// 		margin-left: 60px;
+// 	}
+// 	.portHeader {
+// 		margin-left: 40px;
+// 	}
+// 	.aboutMeCopy p {
+// 		padding-left: 40px;
+// 	}
+// }
+
+// @media (max-width: 750px) {
+// 	.aboutImageBackLayer, .aboutColourBorder {
+// 		width: 170px;
+// 		margin-left: 3%;
+// 	}
+// 	.aboutImageFrontLayer {
+// 		width: 150px;
+// 		margin-left: 3%;
+// 		top: 45%;
+// 		left: 25%;
+// 	}
+// 	.aboutColourBorder {
+// 		top: 6%;
+// 	}
+// 	.aboutMeImage {
+// 		margin-right: 20px;
+// 		min-width: 40%;
+// 	}
+// 	.aboutMeSection {
+// 		p {
+// 			font-size: 16px;
+// 		}
+// 	}
+// }
+
+// @media (max-width: 570px) {
+// 	.aboutMeSection {
+// 		flex-direction: column;
+// 		align-items: center;
+// 		padding-top: 25px;
+// 	}
+// 	.aboutMeCopy .bottomPara {
+// 		margin-bottom: 12%;
+// 	}
+// 	.aboutImageFrontLayer{
+// 		width: 150px;
+// 		top: 45%;
+// 		left: 35%;
+// 		height: 220px;
+// 	}
+// 	.aboutColourBorder {
+// 		padding: 120px 0;
+// 	}
+// 	.portSection {
+// 	margin-top: 180px;
+// 	li {
+// 		font-size: 20px;
+// 		color: $darkGrey;
+// 		}	
+// 	}
+// }
+
+// .portSection {
+// 	display: flex;
+// 	flex-wrap: wrap;
+// 	justify-content: space-around;
+// 	max-width: 900px;
+// 	margin: 0 auto;
+//     p {
+// 			text-align: left;
+//     }
+// }
+
+// .portItem1 {
+//     h2 {
+//         margin-top: 20%;
+//     }
+// }
+
+// .portItem {
+// 	position: relative;
+// 	margin: 10px;
+// 	li {
+// 		line-height: 25px;
+// 		font-size: 90%;
+// 		letter-spacing: .55px;
+// 	}
+// 	a {
+// 		text-transform: uppercase;
+// 		color: $darkGrey;
+// 		font-size: 18px;
+// 		line-height: 22px;
+// 		&:hover{
+// 			color: $black;
+// 			text-decoration: underline;
+// 			}
+//     }
+// 	img {
+// 		filter: drop-shadow(0px 1px 3px $lightGrey);
+// 	}
+// }
+
+// .desc {
+// 	padding-bottom: 3px;
+// 	font-size: 22px;
+// }
+
+// #brent {
+// 	text-transform: lowercase;
+// 	font-size: 20px;
+// 	color: $middleGrey;
+// 	&:hover {
+// 		color: $black;
+// 	}
+// }
+
+// .portItem1{
+// 	display: flex;
+// 	margin-top: 40px;
+// 	min-width: 40%;
+// 	justify-content: center;
+// }
+
+
+// .portTitle {
+// 	flex-direction: column;
+// 	text-transform: lowercase;
+// }
+
+// .wipImage {
+// 	border: 3px dashed $black;
+// 	padding: 4px;
+// }
+
+// .wipTitle {
+// 	margin-bottom: 5px;
+// 	margin-top: 0px;
+// 	&:after {
+// 		display: inline-block;
+// 		content: "\2704";
+// 		transform: rotate(90deg);
+// 	}
+// 	&:before {
+// 		display: inline-block;
+// 		content: "\2704";
+// 		transform: rotate(90deg);
+// 	}
+// }
+
+// .wipTitleh2{
+// 	display: inline-block;
+// 	padding: 5px 11px 2px;
+// 	border: 2px dashed $black;   
+// 	margin-bottom: 15px;
+// 	margin-top: 75px;
+// }
+
+// .portItemImageContainer {
+// 	position: relative;
+// }
+
+// .portImage1 {
+// 	width: 220px;
+// 	position: absolute;
+// 	top: 8%;
+// 	left: calc(50% - 110px);
+// }
+
+// .scissorsIcon {
+// 	max-width: 100px;
+// 	position: absolute;
+// 	z-index: 5;
+// 	top: 13%;
+// }
+
+// .portItem1Image {
+// 	width: 300px;
+// 	height: 400px;
+// 	border: 13px solid;
+// }
+
+// @media (max-width:930px) {
+// 	.portItem1 h2 {
+// 		margin-top: 5%;
+// 	}   
+// }
+
+// @media (max-width: 850px) {
+// 	.portImage1 {
+// 		width: 90%;
+// 		left: 5%;
+// 		top: 4%;
+// 	}
+// 	.scissorsIcon {
+// 		width: 70px;
+// 	}
+// 	.portTitle {
+// 		font-size: 20px;
+// 		margin-bottom:5px ;
+// 	}
+// 	.portItemDesc {
+// 		justify-content: center;
+// 		left: 4%;
+// 		li {
+// 			font-size: 16px;
+// 		}
+// 	}
+// 	.portItem1, {
+// 		justify-content: space-between;
+// 	}
+// 	.wipTitleh2 {
+// 		margin-top: 20px;
+// 	}
+// }
+
+// @media (max-width: 767px) {
+// 	.grimSpan {
+// 		font-size: 14px;
+// 	}
+// }
+
+// @media (max-width: 650px) {
+// 	.portItem1 {
+// 		flex-direction: column;
+// 		border: $border;
+// 		border-image:$borderImage;
+// 		align-content: center;
+// 		margin: 50px;
+// 	}
+// 	.portItemDesc {
+// 		padding-right: 20px;
+// 	}
+// 	.portItem1Image {
+// 		border: none;
+// 	}
+// 	.portItem1Image img{
+// 		width: 300px;
+// 		width: 90%;
+// 		left: 5%;
+// 		top: 5%;
+// 	}
+// 	.portTitle, .portItem1 h2 { 
+// 		margin-top: 10px;
+// 	}
+// 	.portItem1 {
+// 		display: flex;
+// 	}
+// 	.portItemImageContainer {
+// 		display: flex;
+// 	}
+// 	.scissorsIcon {
+// 		left: 15%;
+// 	}
+// }
+
+// @media (max-width: 476px) {
+// 	.portItemImageContainer {
+// 		height: 200px;
+// 	}
+// 	.portItem1 {
+// 		height: 395px;
+// 	}
+// }
+
+// @media (max-width: 400px) {
+// 	.portItem {
+// 		margin: 10px;
+// 	}
+// }
+
+// .portItem1Image {
+// 	border-image:url("/styles/assets/daria-shevtsova-573552.jpg") 30 30;
+// 	border-width: 5px;
+// }
+
+// .portItemDesc {
+// 	justify-content: center;
+// 	position: absolute;
+// 	bottom: 3%;
+// 	left: 12%;
+// }
+
+// .portList {
+// 	display: flex;
+// 	flex-direction: column;
+// }
+
+// .viewLinksContainer {
+// 	margin-top: 20px;
+// }
+
+// .topIconList, .bottomIconList {
+// 	display: flex;
+// }
+
+// .firebaseIcon {
+// 	svg {
+// 		width: 45px;
+// 		height: 45px;
+// 	}
+// }
+
+// .iconList {
+// 	display: flex;
+// 	justify-content: center;
+// 	flex-direction: column;
+// 	max-width: 90%;
+// 	margin: 10% 40px 0;
+// 	ul {
+// 		margin-top: 80px;
+// 	}
+// 	svg {
+// 		max-width: 45px;
+// 		margin: 15px;
+// 	}
+// 	li {
+// 		margin: 0 auto;
+// 		text-align: center;
+// 		display: block;
+// 		display: flex;
+// 		flex-direction: column;
+// 		align-items: center;
+// 		justify-content: center;
+// 		margin: 5px;
+// 	}
+// 	p {
+// 		font-family: $h1Font;
+// 		text-transform: uppercase;
+// 		font-size: 10px;
+// 		letter-spacing: 2px;
+// 		padding-top: 3px;
+// 	}
+// }
+
+// .topIconList, .bottomIconList {
+// 	margin: 0 auto;
+// }
+
+// .bottomIconList {
+// 	margin: 0 auto;
+// }
+
+// .iconList li {
+// 	width: 86px;
+// 	height: 97px;
+// }
+
+// @media (max-width: 685px) {
+// 	.iconList li {
+// 		width: 80px;
+// 		height: 91px;
+// 	}
+// 	ul.iconList {
+// 		margin: 80px auto;
+// 	}
+// }
+
+// @media (max-width: 600px) {
+// 	.iconList li {
+// 		width: 70px;
+// 	height: 81px;
+// 	font-size: 14px;
+// 	}
+// }
+
+// @media (max-width: 447px) {
+// 	.skillsSection {
+// 		display: none;
+// 	}
+// }
+
+// .contactSection {
+// 	margin-top: 100px;
+// }
+
+// .contactForm {
+// 	text-align: left;
+// 	display: flex;
+// 	flex-direction: column;
+// 	align-items: center;
+// 	p {
+// 		margin-bottom: 30px;
+// 	}
+// 	h1 {
+// 		max-width: 100%;
+// 	}
+// 	h2 {
+// 		margin-top: 30px;
+// 		font-size: 40px;
+// 	}
+// }
+
+
+// .contactIcons {
+// 	display: flex;
+// 	justify-content: space-around;
+// }
+
+// .instaIcon, .twitterIcon {
+// 	margin: 10px;
+// 	width: 30px;
+// }
+
+// .instaIcon {
+// 	padding-top: 3px;
+// }
+
+// .twitterIcon {
+// 	padding-top: 5px;
+// }
+
+// .linkedIcon {
+// 	width: 50px;
+// }
+
+
+// section {
+// 	border: $border;
+// 	border-image:url("/styles/assets/daria-shevtsova-57355.jpg") 15 15;
+// 	max-width: 70%;
+// 	margin: 0 auto;
+// 	padding: 10px;
+// }
+
+// @media (max-width: 780px) {
+// 	section {
+// 		max-width: 85%;
+// 	}
+// }
+
+// form {
+// 	display: flex;
+// 	flex-direction: column;
+// 	align-content: center;
+// 	margin-top: 30px;
+// 	font-size: 20px;
+// 	width: 80%;
+// }
+
+// .form {
+// 	border: none;
+// 	background-color: lighten($backgroundColour, 30);
+// }
+
+
+// .formTopContainer {
+// 	display: flex;
+// 	justify-content: space-between;
+// } 
+
+// .formItem {
+// 	display: flex;
+// 	flex-direction: column;
+// 	margin: 10px 10px 10px 0;
+// }
+
+// textarea {
+// 	padding: 10px;
+// 	margin-bottom: 15px;
+// }
+
+// label {
+// 	padding: 15px 0 5px 0;
+// }
+
+// .formEmail {
+// 	width: 60%;
+// }
+
+// .sendButton {
+// 	padding: 5px 30px 3px;
+// 	font-size:24px;
+// 	margin: 0 auto;
+// 	text-transform: lowercase;
+// 	font-family: $h1Font;
+// 	background-color: lighten($lightGrey, 30);
+// 	border: 2px solid;
+// 	border-image:url("/styles/assets/daria-shevtsova-573555.jpg") 15 15;
+// 	margin-bottom: 20px;
+// }
+
+
+// @media (max-width: 670px) {
+// 	.formTopContainer {
+// 		flex-direction: column;
+// 	}
+// 	.formName, .formEmail {
+// 		width: 70%;
+// 	}   
+// 	form {
+// 		width: 100%;
+// 	}
+// }
+
+// @media (max-width: 500px) {
+// 	.formName, .formEmail {
+// 		width: 100%;
+// 	}
+// }
+
+// @media (max-width: 400px) {
+// 	#hello {
+// 		width: 148px;
+// 		margin: 30px auto 0;
+// 	}
+// }
+
+
+
+
+// footer {
+// 	display: flex;
+// 	justify-content: space-between;
+// 	margin-top: 100px;
+// 	background: linear-gradient(to top,
+// 	rgba(235,235,235,.1),
+// 	rgba(235,235,235,1)), 
+// 	url("/styles/assets/vincent-guth-358800-unsplashFooter.jpg");
+// 	background-size: cover;
+// 	background-position: left;
+// 	background-repeat: no-repeat;
+// 	padding: 150px 50px 20px;
+// 	position: relative;
+// 	z-index: -1;
+// 	p {
+// 			letter-spacing: 2px;
+// 	}
+// }
+
+// .scrollButton {
+// 	padding: 5px 15px;
+// 	position: relative;
+// 	left: calc(50% - 75px);
+// 	right: calc(50% - 75px);
+// 	top: 210px;
+// 	font-family: $h1Font;
+// 	font-size: 24px;
+// 	color: $black;
+// 	border: 8px solid;
+// 	border-image:url("/styles/assets/daria-shevtsova-57355.jpg") 50;
+// 	background: lighten($lightGrey,30);
+// }
+
+h1, h2, h3, h4, h5, h6, ul, li, p {
 	margin: 0;
-	padding: 0;
-	list-style: none;
-}
-
-h1{
-	font-family: $h1Font;
-}
-
-p, input, label, li, textarea {
-	font-family: $copyFont;
-}
-
-h2, h3 {
-	font-family: $h1Font;
-}
-
-footer p {
-	font-family: $h1Font;
-}
-
-p {
-	font-size: 16px;
-	margin: 0;
-	padding: 0;
-	color: $darkGrey;
 }
 
 ul {
+	list-style: none;
+}
+
+.plainJane {
+	border: 5px solid;
+	font-family: 'Reem Kufi', sans-serif;
 	display: flex;
-}
-
-header {
-	background-image: url("/styles/assets/vincentGuthFlipped.jpg");
-	background-size: cover;
-	padding: 200px;
-	display: flex;
-	justify-content: center;
-	position: relative;
-	border-bottom: 10px solid;
-	border-image:url("/styles/assets/daria-shevtsova-573556.jpg")10 10 round;
-    
-	h1 {
-		font-size: 115px;
-		position: relative;
-		z-index: 2;
-		margin: 5px;
-		padding-top: 35px;
-		padding-bottom: 10px;
-	}
-
-	.headerColourBorder {
-		border: 13px solid;
-		border-image:url("/styles/assets/daria-shevtsova-57355.jpg") 15 15;
-		padding: 100px 70px;
-		width: 35%;
-		position: absolute;
-		left: 0;
-		right: 0;
-		margin: auto;
-		top: 33%;
-		z-index: 1;
-    }
-	h2 {
-		position: relative;
-		bottom: 18%;
-		text-align: center;
-		padding: 2px;
-		font-size: 30px;
-	}
-}
-
-.bottomHeader {
-	margin-top: 15px;
-	margin-bottom: 15px;
-}
-
-@media (max-width: 1080px) {
-	header {
-		padding: 200px 100px;
-	}
-}
-
-@media (max-width:995px) {
-	header {
-		h1 {
-			font-size: 80px;
-		}
-	}
-}
-
-@media (max-width: 877px) {
-	header {
-		h1 {
-			font-size: 70px;
-			padding-top: 20px;
-		}
-	}
-	#headerColour {
-		padding: 70px 130px;
-		max-width: 40%;
-	}
-}
-
-@media (max-width: 817px) {
-	header {
-		h1 {
-				font-size: 60px;
-		}
-	}
-	#headerColour {
-		padding: 65px 130px;
-	}
-}
-
-@media (max-width: 759px) {
-	header {
-		h1{
-				font-size: 50px;
-				padding-bottom: 10px;
-		}
-		h2 {
-				font-size: 24px;
-		}
-	}
-	.bottomHeader {
-		margin-bottom: 10px;
-	}
-	#headerColour {
-		padding: 70px 70px;
-		border: 8px solid;
-		border-image:url("/styles/assets/daria-shevtsova-573555.jpg") 15 15;
-		}
-}
-
-@media (max-width: 701px) {
-	header {
-		padding: 200px 100px;
-	}
-}
-
-@media (max-width: 670px) {
-	#headerColour {
-		padding: 60px 70px;
-}
-	header {
-		h1 {
-			bottom: 10%;
-		}
-		h2 {
-			bottom: 27%;
-		}
-	}
-}
-
-@media (max-width: 501px) {
-	header {
-		padding: 100px 70px;
-		h1 {
-			padding-top: 30px;
-			bottom: 1%;
-		}
-		h2 {
-			bottom: 20%;
-		}
-	}
-	#headerColour {
-		padding: 80px 90px 30px 90px;
-	}
-}
-
-@media (max-width: 451px) {
-	header {
-		h1 {
-			font-size: 40px;
-		}
-	}
-}
-
-@media (max-width: 393px) {
-	header {
-		h1 {
-			font-size: 30px;
-		}
-		h2 {
-			font-size: 16px;
-			z-index: 2;
-		}
-	}
-	#headerColour {
-		padding: 30px 50px;
-		top: 40%;
-	}
-}
-
-@media (max-width: 335px) {
-	header {
-		padding: 100px 50px;
-	}
-}
-
-.sectionHeader {
-	font-size: 40px;
-	display: inline-block;
-	letter-spacing: 2px;
-}
-
-.portHeader {
-	margin-top: 15%;
-	text-align: left;
-	padding-left: 20px;
-	margin-bottom: 10px;
-}
-
-.aboutMeSection {
-	display: flex;	
-	padding-top: 15px;
-	p {
-		padding: 5px 10px 5px 5px;
-		font-size: 18px;
-		margin: 10px 5px 10px 15px;
-	}
-	h2 {
-		padding: 5% 0 30px 20px;
-	}
-}
-
-.aboutMeImage {
-	position: relative;
-	min-width: 50%;
-}
-
-.aboutImageBackLayer {
-	width: 300px;
-	position: relative;
-	margin: 10px;
-}
-
-.aboutColourBorder {
-	width: 300px;
-	border: 13px solid;
-	border-image:url("/styles/assets/daria-shevtsova-573554.jpg") 15 15;
-	margin: 10px;
-	padding: 200px 0;
-	position: absolute;
-	top: 6%;
-	left: 15%;
-}
-
-.aboutImageFrontLayer {
-	width: 300px;
-	filter: drop-shadow(0px 1px 3px $darkGrey);
-	background-repeat: no-repeat;
-	background-size: contain;
-	position: absolute;
-	top: 28%;
-	left: 32%;
-	img {
-		max-width: 100%;
-
-	}
-}
-
-@media (max-width: 950px) {
-	.aboutImageBackLayer, .aboutColourBorder, .aboutImageFrontLayer {
-		width: 200px;
-		margin-left: 20%;
-	}
-	.aboutColourBorder {
-		padding: 130px 0;
-		top: 8%;
-		left: 8%;
-	}
-	.aboutImageFrontLayer {
-		top: 22%;
-		left: 20%;
-	}
-	.aboutMeSection {
-		h2 {
-			padding: 10% 0 0 0;
-			margin-right: 30%;
-		}
-	}
-	.sectionHeader {
-		margin-left: 60px;
-	}
-	.portHeader {
-		margin-left: 40px;
-	}
-	.aboutMeCopy p {
-		padding-left: 40px;
-	}
-}
-
-@media (max-width: 750px) {
-	.aboutImageBackLayer, .aboutColourBorder {
-		width: 170px;
-		margin-left: 3%;
-	}
-	.aboutImageFrontLayer {
-		width: 150px;
-		margin-left: 3%;
-		top: 45%;
-		left: 25%;
-	}
-	.aboutColourBorder {
-		top: 6%;
-	}
-	.aboutMeImage {
-		margin-right: 20px;
-		min-width: 40%;
-	}
-	.aboutMeSection {
-		p {
-			font-size: 16px;
-		}
-	}
-}
-
-@media (max-width: 570px) {
-	.aboutMeSection {
-		flex-direction: column;
-		align-items: center;
-		padding-top: 25px;
-	}
-	.aboutMeCopy .bottomPara {
-		margin-bottom: 12%;
-	}
-	.aboutImageFrontLayer{
-		width: 150px;
-		top: 45%;
-		left: 35%;
-		height: 220px;
-	}
-	.aboutColourBorder {
-		padding: 120px 0;
-	}
-	.portSection {
-	margin-top: 180px;
-	li {
-		font-size: 20px;
-		color: $darkGrey;
-		}	
-	}
-}
-
-.portSection {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-around;
-	max-width: 900px;
-	margin: 0 auto;
-    p {
-			text-align: left;
-    }
-}
-
-.portItem1 {
-    h2 {
-        margin-top: 20%;
-    }
-}
-
-.portItem {
-	position: relative;
-	margin: 10px;
-	li {
-		line-height: 25px;
-		font-size: 90%;
-		letter-spacing: .55px;
-	}
-	a {
-		text-transform: uppercase;
-		color: $darkGrey;
-		font-size: 18px;
-		line-height: 22px;
-		&:hover{
-			color: $black;
-			text-decoration: underline;
-			}
-    }
-	img {
-		filter: drop-shadow(0px 1px 3px $lightGrey);
-	}
-}
-
-.desc {
-	padding-bottom: 3px;
-	font-size: 22px;
-}
-
-#brent {
-	text-transform: lowercase;
-	font-size: 20px;
-	color: $middleGrey;
-	&:hover {
-		color: $black;
-	}
-}
-
-.portItem1{
-	display: flex;
-	margin-top: 40px;
-	min-width: 40%;
-	justify-content: center;
-}
-
-
-.portTitle {
-	flex-direction: column;
-	text-transform: lowercase;
-}
-
-.wipImage {
-	border: 3px dashed $black;
-	padding: 4px;
-}
-
-.wipTitle {
-	margin-bottom: 5px;
-	margin-top: 0px;
-	&:after {
-		display: inline-block;
-		content: "\2704";
-		transform: rotate(90deg);
-	}
-	&:before {
-		display: inline-block;
-		content: "\2704";
-		transform: rotate(90deg);
-	}
-}
-
-.wipTitleh2{
-	display: inline-block;
-	padding: 5px 11px 2px;
-	border: 2px dashed $black;   
-	margin-bottom: 15px;
-	margin-top: 75px;
-}
-
-.portItemImageContainer {
-	position: relative;
-}
-
-.portImage1 {
-	width: 220px;
-	position: absolute;
-	top: 8%;
-	left: calc(50% - 110px);
-}
-
-.scissorsIcon {
-	max-width: 100px;
-	position: absolute;
-	z-index: 5;
-	top: 13%;
-}
-
-.portItem1Image {
-	width: 300px;
-	height: 400px;
-	border: 13px solid;
-}
-
-@media (max-width:930px) {
-	.portItem1 h2 {
-		margin-top: 5%;
-	}   
-}
-
-@media (max-width: 850px) {
-	.portImage1 {
-		width: 90%;
-		left: 5%;
-		top: 4%;
-	}
-	.scissorsIcon {
-		width: 70px;
-	}
-	.portTitle {
-		font-size: 20px;
-		margin-bottom:5px ;
-	}
-	.portItemDesc {
-		justify-content: center;
-		left: 4%;
-		li {
-			font-size: 16px;
-		}
-	}
-	.portItem1, {
-		justify-content: space-between;
-	}
-	.wipTitleh2 {
-		margin-top: 20px;
-	}
-}
-
-@media (max-width: 767px) {
-	.grimSpan {
-		font-size: 14px;
-	}
-}
-
-@media (max-width: 650px) {
-	.portItem1 {
-		flex-direction: column;
-		border: $border;
-		border-image:$borderImage;
-		align-content: center;
-		margin: 50px;
-	}
-	.portItemDesc {
-		padding-right: 20px;
-	}
-	.portItem1Image {
-		border: none;
-	}
-	.portItem1Image img{
-		width: 300px;
-		width: 90%;
-		left: 5%;
-		top: 5%;
-	}
-	.portTitle, .portItem1 h2 { 
-		margin-top: 10px;
-	}
-	.portItem1 {
-		display: flex;
-	}
-	.portItemImageContainer {
-		display: flex;
-	}
-	.scissorsIcon {
-		left: 15%;
-	}
-}
-
-@media (max-width: 476px) {
-	.portItemImageContainer {
-		height: 200px;
-	}
-	.portItem1 {
-		height: 395px;
-	}
-}
-
-@media (max-width: 400px) {
-	.portItem {
-		margin: 10px;
-	}
-}
-
-.portItem1Image {
-	border-image:url("/styles/assets/daria-shevtsova-573552.jpg") 30 30;
-	border-width: 5px;
-}
-
-.portItemDesc {
-	justify-content: center;
-	position: absolute;
-	bottom: 3%;
-	left: 12%;
-}
-
-.portList {
-	display: flex;
-	flex-direction: column;
-}
-
-.viewLinksContainer {
-	margin-top: 20px;
-}
-
-.topIconList, .bottomIconList {
-	display: flex;
-}
-
-.firebaseIcon {
-	svg {
-		width: 45px;
-		height: 45px;
-	}
-}
-
-.iconList {
-	display: flex;
-	justify-content: center;
-	flex-direction: column;
-	max-width: 90%;
-	margin: 10% 40px 0;
-	ul {
-		margin-top: 80px;
-	}
-	svg {
-		max-width: 45px;
-		margin: 15px;
-	}
-	li {
-		margin: 0 auto;
-		text-align: center;
-		display: block;
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		justify-content: center;
-		margin: 5px;
-	}
-	p {
-		font-family: $h1Font;
-		text-transform: uppercase;
-		font-size: 10px;
-		letter-spacing: 2px;
-		padding-top: 3px;
-	}
-}
-
-.topIconList, .bottomIconList {
-	margin: 0 auto;
-}
-
-.bottomIconList {
-	margin: 0 auto;
-}
-
-.iconList li {
-	width: 86px;
-	height: 97px;
-}
-
-@media (max-width: 685px) {
-	.iconList li {
-		width: 80px;
-		height: 91px;
-	}
-	ul.iconList {
-		margin: 80px auto;
-	}
-}
-
-@media (max-width: 600px) {
-	.iconList li {
-		width: 70px;
-	height: 81px;
-	font-size: 14px;
-	}
-}
-
-@media (max-width: 447px) {
-	.skillsSection {
-		display: none;
-	}
-}
-
-.contactSection {
-	margin-top: 100px;
-}
-
-.contactForm {
-	text-align: left;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	p {
-		margin-bottom: 30px;
-	}
-	h1 {
-		max-width: 100%;
-	}
-	h2 {
-		margin-top: 30px;
-		font-size: 40px;
-	}
-}
-
-
-.contactIcons {
-	display: flex;
-	justify-content: space-around;
-}
-
-.instaIcon, .twitterIcon {
-	margin: 10px;
-	width: 30px;
-}
-
-.instaIcon {
-	padding-top: 3px;
-}
-
-.twitterIcon {
-	padding-top: 5px;
-}
-
-.linkedIcon {
-	width: 50px;
-}
-
-
-section {
-	border: $border;
-	border-image:url("/styles/assets/daria-shevtsova-57355.jpg") 15 15;
-	max-width: 70%;
-	margin: 0 auto;
+	width: 90%;
+	margin: 25px auto;
 	padding: 10px;
 }
 
-@media (max-width: 780px) {
-	section {
-		max-width: 85%;
-	}
+.sectionA {
+	order: 2;
 }
 
-form {
-	display: flex;
-	flex-direction: column;
-	align-content: center;
-	margin-top: 30px;
-	font-size: 20px;
-	width: 80%;
-}
-
-.form {
-	border: none;
-	background-color: lighten($backgroundColour, 30);
-}
-
-
-.formTopContainer {
-	display: flex;
-	justify-content: space-between;
-} 
-
-.formItem {
-	display: flex;
-	flex-direction: column;
-	margin: 10px 10px 10px 0;
-}
-
-textarea {
-	padding: 10px;
-	margin-bottom: 15px;
-}
-
-label {
-	padding: 15px 0 5px 0;
-}
-
-.formEmail {
+.sectionB {
 	width: 60%;
 }
-
-.sendButton {
-	padding: 5px 30px 3px;
-	font-size:24px;
-	margin: 0 auto;
-	text-transform: lowercase;
-	font-family: $h1Font;
-	background-color: lighten($lightGrey, 30);
-	border: 2px solid;
-	border-image:url("/styles/assets/daria-shevtsova-573555.jpg") 15 15;
-	margin-bottom: 20px;
-}
-
-
-@media (max-width: 670px) {
-	.formTopContainer {
-		flex-direction: column;
-	}
-	.formName, .formEmail {
-		width: 70%;
-	}   
-	form {
-		width: 100%;
-	}
-}
-
-@media (max-width: 500px) {
-	.formName, .formEmail {
-		width: 100%;
-	}
-}
-
-@media (max-width: 400px) {
-	#hello {
-		width: 148px;
-		margin: 30px auto 0;
-	}
-}
-
-
-
-
-footer {
-	display: flex;
-	justify-content: space-between;
-	margin-top: 100px;
-	background: linear-gradient(to top,
-	rgba(235,235,235,.1),
-	rgba(235,235,235,1)), 
-	url("/styles/assets/vincent-guth-358800-unsplashFooter.jpg");
-	background-size: cover;
-	background-position: left;
-	background-repeat: no-repeat;
-	padding: 150px 50px 20px;
-	position: relative;
-	z-index: -1;
-	p {
-			letter-spacing: 2px;
-	}
-}
-
-.scrollButton {
-	padding: 5px 15px;
-	position: relative;
-	left: calc(50% - 75px);
-	right: calc(50% - 75px);
-	top: 210px;
-	font-family: $h1Font;
-	font-size: 24px;
-	color: $black;
-	border: 8px solid;
-	border-image:url("/styles/assets/daria-shevtsova-57355.jpg") 50;
-	background: lighten($lightGrey,30);
-}
-
-
 
 
