@@ -201,3 +201,8 @@ ul {
     @media (min-width: 640px) {
       .plainJane .sectionB {
         width: 60%; } }
+
+.flashlight {
+  position: absolute;
+  width: 50px;
+  background-color: #0c0c0c; }
